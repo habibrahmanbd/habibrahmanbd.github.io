@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{pgfkeys}
+\usepackage{graphics}
+\usepackage{multicol}
+\usepackage{mwe}
+\usepackage{subcaption,float}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=0.85in, right=0.85in, bottom=0.5in, top=0.4in]{geometry}
+
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+\center  \LARGE{\textbf{Habibur Rahman}} \\
+\small{Competitive Programmer, Algorithmist}
+\vspace{-4ex}
+{\line(50,0){500}}
+\normalsize
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype. 
+\begin{center}
+\begin{tabular}{l l}
+Rajshahi University of Engineering \& Technology    & \hspace{1.55in} \href{mailto:habib_cse_ruet@yahoo.com}{habib\_cse\_ruet@yahoo.com} \\
+Computer Science \& Engineering    & \hspace{1.55in}  \href{www.habib.tech}{www.habib.tech}   \\        
+Rajshahi - 6204, Bangladesh & \hspace{1.55in} Phone: +880 1739 834866 \\
+\end{tabular}
+\end{center}
+\vspace{2.2ex}
+
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+\vspace{-3ex}
+\begin{flushleft}
+\Large{Summary}
+\end{flushleft}
+\vspace{-1.85ex}
+%\small{}
+\begin{multicols}{2}
+\justify
+I'm \textbf{Habibur Rahman}, an undergraduate student at \textbf{Rajshahi University of Engineering and Technology}. I'm a \textbf{sport programmer} and love to solve problems.I had participated hundreds of \textbf{online programming contests}, two times in \textbf{National Collegiate Programming Contest (NCPC)} and \textbf{ACM-ICPC Dhaka Regional}. Currently, I am solving problems in several judges like \href{http://codeforces.com/profile/habib_rahman}{\textbf{Codeforces}}, \href{https://www.codechef.com/users/habib_ruet}{\textbf{Codechef}} etc.\\
+I love to \textbf{take challenges} and a \textbf{quick learner}.
+\end{multicols}
+\vspace{1ex}
+\noindent \begin{tabular}{@{} l|l}
+ \Large{Education}    & \textbf{Rajshahi University of Engineering \& Technology, Bangladesh.}\hspace{7.5in}\\
+     & Bachelor in Science, On Going.\\
+     & \textbf{Dept.}: \textbf{Computer Science \& Engineering} \\
+     & \textbf{Result}: \textbf{3.77 out of 4.00} (Upto 7th Semester)\\
+     & \textbf{Session}: 2012-2017
+ \vspace{1.85ex}
+ \\
+ \Large{Skills}\\
+&\begin{tabular}{l l}
+C++ & \hspace{4.2in} \small{\textbf{[95\%]}}•••••\\
+Python    & \hspace{4.2in}  \small{\textbf{[70\%]}}••••\\
+JAVA  & \hspace{4.2in} \small{\textbf{[75\%]}}••••\\
+HTML    & \hspace{4.2in}  \small{\textbf{[80\%]}}••••\\
+CSS  & \hspace{4.2in} \small{\textbf{[55\%]}}•••\\
+PHP    & \hspace{4.2in}  \small{\textbf{[80\%]}}••••\\
+\end{tabular}
+ \vspace{1ex}\\
+   \Large{Projects}    &  \href{https://github.com/habibrahmanbd/BanglaPDFtoBanglaDOC}{\textbf{• Bangla PDF to Bangla DOC Converter}} \\
+ 	& Year: 2017, Language: JAVA\\
+    & \parbox{5.0in}{Software to Convert PDF to DOC for Bangla Language.}
+    \vspace{1ex}\\
+    & \href{https://github.com/habibrahmanbd/onlinelabsystem}{\textbf{• Online Judging System}}\\
+    & Year: 2015, Language: HTML, CSS \& PHP \\
+    & \parbox{5.0in}{Online judge for programming contest and problem solving}\vspace{1ex}\\
+    & \href{https://github.com/habibrahmanbd/nirob-blood-app/}{\textbf{• Blood Bank Management}}\\
+    & Year: 2014, Language: JAVA \\
+    & \parbox{5.0in}{Software for Blood Bank Management}\vspace{1ex}\\
+    & \href{https://github.com/habibrahmanbd/Game-Rakhal-v1.0/}{\textbf{• Game Rakhal}}\\
+    & Year: 2014, Language: JAVA \\
+    & \parbox{5.0in}{Desktop Game}\vspace{1ex}\\
+    & \href{https://github.com/habibrahmanbd/dailyCalorieCalculator}{\textbf{• Daily Calorie Calculator}}\\
+    & Year: 2014, Language: JAVA \\
+    & \parbox{5.0in}{Application for calculation of daily Life Calorie}
+    \vspace{0.85ex}\\
+ \Large{Awards} &\textbf{• ACM-ICPC Dhaka Regional-2016} \\
+     & \parbox{5.0in}{20\textsuperscript{th}, Rajshahi Divisional Champion,} \\
+     & \parbox{5.0in}{Top 10 University Awards}\vspace{1ex}\\
+     & \textbf{• Inter University Programming Contest (IUPC), IUT Fest - 2016} \\
+     & \parbox{5.0in}{17\textsuperscript{th} Position} \vspace{1ex}\\
+     & \textbf{• Intra University Programming Contest, IEEE RUET, Student Branch} \\
+     & \parbox{5.0in}{2015, Runners Up} \vspace{1ex}\\
+     & \textbf{• Intra RUET University Day Programming Contest} \\
+     & \parbox{5.0in}{2014, 4\textsuperscript{th} Position} 
+     \vspace{0.85ex}\\
+\end{tabular}
+\newpage
+\center  \LARGE{\textbf{Habibur Rahman}} \\ \small{Competitive Programmer, Algorithmist} \\
+\vspace{-1ex}
+{\line(1,0){450}}
+\vspace{2em}
+\noindent 
+\begin{center}
+\begin{tabular}{l|l}
+     \Large{Certificates} & \href{http://habib.tech/Certificates/2016_CertificateContestantPlace_Asia_Dhaka_2016_333124.pdf}{• ACM-ICPC Dhaka Regional 2016}\\
+&{\href{http://habib.techCertificates/habib_ruet-SNCK2016.pdf}{• Codechef Snackdown 2016}}\\
+&\href{http://habib.tech/Certificates/2017_CertificateContestantPlace_Bangladesh_CUET_NCPC_354803.pdf}{• CUET NCPC 2017}\\
+&\href{http://habib.tech/Certificates/habib_ruet-SNCK17.pdf}{• Codechef Snackdown 2017}\\
+&\href{http://habib.tech/Certificates/Intro_to_Python_for_Data_Science.pdf}{• Introduction to Python for Data Science}
+\vspace{1ex}\\
+\Large{Contributions} & \textbf{What a Problem!}\\
+& Coding Problem on \textbf{Devskill Coding Contest 15}\\
+& \href{https://devskill.com/CodingProblems/ViewProblem/237}{https://devskill.com/CodingProblems/ViewProblem/237}\vspace{0.85ex}\\
+ \Large{Profiles}
+ & \textbf{LinkedIn:} \href{https://www.linkedin.com/in/habibrahmanbd}{https://www.linkedin.com/in/habibrahmanbd}\hspace{7in}\\
+ & \textbf{ICPC ID:} \href{http://https://icpc.baylor.edu/ICPCID/ZRGSWBPI6H06}{https://icpc.baylor.edu/ICPCID/ZRGSWBPI6H06}\\
+ & \textbf{Github:} \href{https://github.com/habibrahmanbd}{https://github.com/habibrahmanbd}\\
+ & \textbf{Blog:} \href{http://blog.habib.tech}{http://blog.habib.tech}\vspace{0.85ex}\\
+ \Large{Languages}  & English , Bangla\\
+\end{tabular}
+\end{center}
+\end{document}
+
