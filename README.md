@@ -1,2 +1,2 @@
 # website
-for http://habib.tech
+for http://habibrahman.me
