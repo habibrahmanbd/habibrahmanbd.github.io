@@ -27,9 +27,15 @@
             }
 
         </style>
+        <script> 
+        $(function(){
+          $("#headerIncluder").load("header.html");
+          $("#footerIncluder").load("footer.html"); 
+        });
+        </script> 
     </head>
     <body>
-        <script src="header.html"></script>
+        <div id="headerIncluder"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-2 text-center">
@@ -66,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <?php include("footer.html"); ?>
+            <div id="footerIncluder"></div>
         </div>
         <script src="Assets/jquery.min.js"></script>
         <script src="Assets/bootstrap.min.js"></script>
