@@ -1,15 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" itemscope="" itemtype="http://schema.org/Person">
-    <head prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="http://gmpg.org/xfn/11" rel="profile">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#2780e3">
-        <meta name="msapplication-navbutton-color" content="#2780e3">
-        <meta name="apple-mobile-web-app-status-bar-style" content="#2780e3">
-        <meta name="description" content="Undergraduate Student, Sport Programmer, Algorithmist">
-        <meta name="author" content="Habibur Rahman">
+<html lang="en-US">
+    <head >
         <title>Habibur Rahman</title>
         <link rel="icon" type="image/x-icon" href="Assets/H_1.ico">
         <link rel="apple-touch-icon" sizes="57x57" href="">
@@ -26,9 +17,16 @@
             margin-right: 0px;
             }
         </style>
+        <script src="Assets/jquery.min.js"></script>
+        <script> 
+        $(function(){
+          $("#headerIncluder").load("header.html");
+          $("#footerIncluder").load("footer.html"); 
+        });
+        </script>
     </head>
     <body>
-        <?php include("header.html"); ?> 
+        <div id="headerIncluder"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -69,9 +67,7 @@
                     </div>
                 </div>
             </div>
-            <?php include("footer.html"); ?> 
+            <div id="footerIncluder"></div>
         </div>
-        <script src="Assets/jquery.min.js"></script>
-        <script src="Assets/bootstrap.min.js"></script>
     </body>
 </html>
