@@ -81,6 +81,7 @@ h1
 {
     font-size: 2em;
     margin: 0.67em 0;
+    color: #006599;
 }
 
 mark
@@ -1821,6 +1822,7 @@ h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5
 h1,.h1
 {
     font-size: 36px;
+    color: #006599;
 }
 
 h2,.h2
@@ -1831,6 +1833,7 @@ h2,.h2
 h3,.h3
 {
     font-size: 24px;
+    color: #006599;
 }
 
 h4,.h4
