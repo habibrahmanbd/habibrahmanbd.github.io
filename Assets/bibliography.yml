@@ -1,0 +1,8 @@
+- id: WALGES19
+  type: paper-conference
+  authors: Habibur Rahman, Julia Rahman, and Asmaul Husna
+  title: 'WALGES: Weighted Probability Based Scoring Approach for Solving Arithmatic Word Problems using Semantic Parsing
+  year: 2019'
+  venue: IEEE International Conference on Electrical, Computer and Communication Engineering
+  collection-title: WALGES '19
+  pdf: /resources/pubs/WALGES.pdf
