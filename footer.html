@@ -6,7 +6,8 @@
 		ga('create', 'UA-100878915-1', 'auto');
 		ga('send', 'pageview');
 		var lastModified = document.lastModified;
-		document.getElementById("modified").innerHTML = lastModified;
+		window.alert(document.getElementById("modified").innerHTML);
+		document.getElementById("modified").innerHTML += lastModified;
 </script>
 <hr>
   <footer>
