@@ -13,9 +13,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="">
 	<link rel="apple-touch-icon" sizes="144x144" href="">
 	<link href="Assets/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="Assets/font-awesome-4.7.0/css/font-awesome.css">
 	<style>
 		body {
 			padding-top: 70px;
@@ -46,7 +44,7 @@
 
 <body>
 	<div id="headerIncluder"></div>
-	<div class="container">
+	<div class="container" style="font-size: 18px;">
 		<div class="row">
 			<div class="col-md-2 text-center" style="padding-top: 40px;">
 				<img class="img-responsive thumbnail" src="Images/profile_pic.jpeg" alt="Habibur Rahman">
@@ -57,7 +55,7 @@
 						<strong>Habibur Rahman</strong>
 					</b>
 				</h1>
-				<h5>
+				<div class="panel-body">
 					<b>Graduate Research Assistant Fellow</b><br>
 					Lelis Research Group<br>
 					Alberta Machine Intelligence Institute (amii)<br>
@@ -66,7 +64,7 @@
 					Edmonton, AB, Canada<br>
 					Email: habibur [at] ualberta [dot] ca<br>
 					[bd] [habib] [94] [at] gmail [dot] com<br>
-				</h5>
+				</div>
 			</div>
 			<div style="padding-top: 40px;" class="col-md-2 text-center">
 				<a class="twitter-timeline" href="https://twitter.com/habib_rahman_bd?ref_src=twsrc%5Etfw"
@@ -78,7 +76,7 @@
 		<div class="row">
 			<!-- <div class="col-md-12"> -->
 			<div class="panel-body">
-				<h4 class="text-justify">
+				<div class="text-justify">
 					I am working as a Graduate Research Assistant at the <a href="https://ualberta.ca">University of
 						Alberta</a>. Prior to join UofA, I have served as a Software Engineer in <a
 						href="https://research.samsung.com/srbd">Samsung R&D Institute Bangladesh Limited (SRBD)</a>,
@@ -90,229 +88,302 @@
 						href="http://cse.ruet.ac.bd">Rajshahi University of Engineering and Technology (RUET)</a>,
 					Rajshahi, Bangladesh.<br>
 					My research interests lie in the area of Program Synthesis, and Machine Learning.
-				</h4>
+				</div>
 			</div>
-			<p class="text-justify">
+		</div>
+		<div class="row">
+			<p class="panel-body" class="text-justify">
 				<span class="label label-danger">Notice</span> I am currently open to work as a <span
 					class="label label-success">
 					Machine Learning Engineer, Software Engineer or Data
 					Scientist</span> from <span class="label label-warning">May 2023</span>.
 			</p>
-			<h3 id="experiences"><b>Experiences</b></h3>
+			<ul class="list-inline text-center">
+				<li class="list-inline-item"><a href="Assets/habibur_rahman_resume_SWE.html"><i class="fa fa-file fa-1x"
+							alt="Resume"></i> Resume</a></li>|
+				<li class="list-inline-item"><a href="https://www.linkedin.com/in/habibrahmanbd/"><i
+							class="fa fa-linkedin-square fa-1x" alt="LinkedIn"></i>
+						LinkedIn</a>
+				<li>|
+				<li class="list-inline-item"><a href="https://github.com/habibrahmanbd/"><i class="fa fa-github fa-1x"
+							alt="GitHub"></i> GitHub</a>
+				</li>|
+				<li class="list-inline-item"><a href="https://twitter.com/habib_rahman_bd"><i
+							class="fa fa-twitter fa-1x" alt="Twitter"></i> Twitter</a>
+				</li>|
+				<!-- <li class="list-inline-item"><a href=""><i class="fa fa-google fa-1x" alt="Google Scholar"></i> Google
+						Scholar</a></li>| -->
+				<li class="list-inline-item"><a href="https://blog.habibrahman.me/"><i class="fa fa-pencil-alt fa-1x"
+							alt="Blog"></i> Blog</a></li>|
+				<li class="list-inline-item"><a href="https://medium.com/@habibrahmanbd"><i class="fa fa-medium fa-1x"
+							alt="Medium"></i> Medium</a></li>
+			</ul>
+		</div>
+		<div id="experiences">
+			<b>
+				<h3>Experiences</h3>
+			</b>
 			<hr>
-			<div class="col-md-2">
-				<img class="img-responsive thumbnail" style="width: 150px; height: 100px;" src="Assets/amii-logo.png"
-					alt="Alberta Machine Intelligence Institute (amii)">
+			<div class="row">
+				<div class="col-md-2">
+					<img class="img-responsive thumbnail" style="width: 150px; height: 100px;"
+						src="Assets/amii-logo.png" alt="Alberta Machine Intelligence Institute (amii)">
+				</div>
+				<div style="padding-left: 20%;" class="panel-heading">
+					<b>Graduate Research Assistant Fellow</b><span class="pull-right"><span
+							class="label label-success">May
+							2021 -- Present</span></span>
+					<p class="info">
+						<text>Supervisor:
+							<a class="label label-primary" href="https://webdocs.cs.ualberta.ca/~santanad/">Dr.
+								Levi Lelis</a>
+							<a class="label label-primary"
+								href="https://ca.linkedin.com/in/elham-parhizkar-552a4565/">Dr. Elham Parhizkar</a>
+						</text><br>
+						<a href="https://www.amii.ca/">Alberta Machine Intelligence Institute </a> | <a
+							href="https://ualberta.ca">University of
+							Alberta</a><span class="pull-right">Edmonton, Alberta, Canada</span><br>
+					</p>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Reduced the runtime of existing methods by <b>10%</b> in program synthesis by using
+								simulated annealing and graph neural network </li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div style="padding-left: 20px;" class="col-md-8">
-				<b>Graduate Research Assistant Fellow</b><span class="pull-right"><span class="label label-success">May
-						2021 -- Present</span></span>
-				<p class="info">
-					<text>Supervisor:
-						<a class="label label-primary" href="https://webdocs.cs.ualberta.ca/~santanad/">Dr.
-							Levi Lelis</a>
-					</text><br>
-					<a href="https://www.amii.ca/">Alberta Machine Intelligence Institute </a> | <a
-						href="https://ualberta.ca">University of
-						Alberta</a><span class="pull-right">Edmonton, Alberta, Canada</span><br>
-				<ul>
-					<li>Reduced the runtime of existing methods by <b>10%</b> in program synthesis by using simulated
-						annealing and
-						graph neural network </li>
-				</ul>
-				</p>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					<img class="img-responsive thumbnail" style="width: 200px; height: 70px;"
+						src="Images/ualberta-logo-reverse.png" alt="University of Alberta">
+				</div>
+				<div style="padding-left: 20%;" class="panel-heading">
+					<b>Graduate Teaching Assistant</b><span class="pull-right"><span class="label label-success">Winter
+							2021
+							and Fall 2021</span></span>
+					<p class="info">
+						<a class="label label-primary"
+							href="https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/practical-programming-methodology.html">Course:
+							CMPUT 201</a><br>
+						<text>Instructor:
+							<a class="label label-primary" href="https://sarahnadi.org"> Dr. Sarah Nadi</a>
+							<a class="label label-primary" href="https://ildarakhmetov.com/"> Dr. Ildar Akhmetov</a>
+							<a class="label label-primary" href="http://webdocs.cs.ualberta.ca/~ghlin/"> Dr. Guohui
+								Lin</a>
+						</text><br>
+						University of Alberta <span class="pull-right">Edmonton, Alberta, Canada</span><br>
+					</p>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Led an undergrad lab section for the <i>Practical Programming Methodology</i> course by
+								preparing lab marking
+								scripts, evaluating submissions, and helping students solve exercise problems</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					<img class="img-responsive thumbnail" style="width: 140px; height: 80px;" src="Images/samsung.png"
+						alt="Samsung">
+				</div>
+				<div style="padding-left: 20%;" class="panel-heading">
+					<b>Software Engineer</b><span class="pull-right"><span class="label label-success">July 2019 - Dec
+							2020</span></span>
+					<p class="info">
+						<a class="label label-primary">Windows Team</a><br>
+						<a href="https://research.samsung.com/srbd">Samsung R&D Institute (SRBD)</a><span
+							class="pull-right">Dhaka, Bangladesh</span><br>
+					</p>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Developed an internal automation tool to convert the Android localization strings for
+								the
+								Windows platform that
+								reduced the string processing time from 120 minutes to 120 seconds</li>
+							<li>Developed the new tag feature for Samsung Notes V3.X and up from concept</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					<img class="img-responsive thumbnail" style="width: 120px; height: 100px;" src="Images/uits.png"
+						alt="UITS">
+				</div>
+				<div style="padding-left: 20%;" class="panel-heading">
+					<b> Lecturer</b><span class="pull-right"><span class="label label-success">Janurary 2018 - June
+							2019</span></span>
+					<p class="info">
+						<a class="label label-primary" href="http://uits.edu.bd">Department of Computer Science and
+							Engineering</a><br>
+						<a href="http://uits.edu.bd">University of Information Technology and Sciences (UITS)</a><span
+							class="pull-right">Dhaka, Bangladesh</span><br>
+					</p>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Redesigned the courses by including programming problems to improve their
+								problem-solving
+								skills
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					<img class="img-responsive thumbnail" style="width: 120px; height: 100px;" src="Images/uitscc.jpeg"
+						alt="UITS Computer Club">
+				</div>
+				<div style="padding-left: 20%;" class="panel-heading">
+					<b>Programming Contest Mentor</b><span class="pull-right"><span class="label label-success">Janurary
+							2018 - June 2019</span></span><br>
+					<p class="info">
+						<a class="label label-primary">UITS Computer Club</a><br>
+						<a href="http://uits.edu.bd">University of Information Technology and Sciences (UITS)</a><span
+							class="pull-right">Dhaka,
+							Bangladesh</span><br>
+					</p>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Prepared the university teams to attend national and international level programming
+								contests conducting
+								sessions and hosting programming contests</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-2">
-				<img class="img-responsive thumbnail" style="width: 200px; height: 70px;"
-					src="Images/ualberta-logo-reverse.png" alt="University of Alberta">
-			</div>
-			<div class="col-md-8">
-				<b>Graduate Teaching Assistant</b><span class="pull-right"><span class="label label-success">Winter 2021
-						and Fall 2021</span></span>
-				<p class="info">
-					<a class="label label-primary"
-						href="https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/practical-programming-methodology.html">Course:
-						CMPUT 201</a><br>
-					<text>Instructor:
-						<a class="label label-primary" href="https://sarahnadi.org"> Dr. Sarah Nadi</a>
-						<a class="label label-primary" href="https://ildarakhmetov.com/"> Dr. Ildar Akhmetov</a>
-						<a class="label label-primary" href="http://webdocs.cs.ualberta.ca/~ghlin/"> Dr. Guohui Lin</a>
-					</text><br>
-					University of Alberta <span class="pull-right">Edmonton, Alberta, Canada</span><br>
-				<ul>
-					<li>Led an undergrad lab section for the <i>Practical Programming Methodology</i> course by
-						preparing lab marking
-						scripts, evaluating submissions, and helping students solve exercise problems</li>
-				</ul>
-				</p>
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-2">
-				<img class="img-responsive thumbnail" style="width: 140px; height: 80px;" src="Images/samsung.png"
-					alt="Samsung">
-			</div>
-			<div class="col-md-8">
-				<b>Software Engineer</b><span class="pull-right"><span class="label label-success">July 2019 - Dec
-						2020</span></span>
-				<p class="info">
-					<a class="label label-primary">Windows Team</a><br>
-					<a href="https://research.samsung.com/srbd">Samsung R&D Institute (SRBD)</a><span
-						class="pull-right">Dhaka, Bangladesh</span><br>
-				<ul>
-					<li>Developed an internal automation tool to convert the Android localization strings for the
-						Windows platform that
-						reduced the string processing time from 120 minutes to 120 seconds</li>
-					<li>Developed the new tag feature for Samsung Notes V3.X and up from concept</li>
-				</ul>
-				</p>
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-2">
-				<img class="img-responsive thumbnail" style="width: 120px; height: 100px;" src="Images/uits.png"
-					alt="UITS">
-			</div>
-			<div class="col-md-8">
-				<b> Lecturer</b><span class="pull-right"><span class="label label-success">Janurary 2018 - June
-						2019</span></span>
-				<p class="info">
-					<a class="label label-primary" href="http://uits.edu.bd">Department of Computer Science and
-						Engineering</a><br>
-					<a href="http://uits.edu.bd">University of Information Technology and Sciences (UITS)</a><span
-						class="pull-right">Dhaka, Bangladesh</span><br>
-				<ul>
-					<li>Redesigned the courses by including programming problems to improve their problem-solving skills
-					</li>
-				</ul>
-				</p>
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-2">
-				<img class="img-responsive thumbnail" style="width: 120px; height: 100px;" src="Images/uitscc.jpeg"
-					alt="UITS Computer Club">
-			</div>
-			<div class="col-md-8">
-				<b>Programming Contest Mentor</b><span class="pull-right"><span class="label label-success">Janurary
-						2018 - June 2019</span></span><br>
-				<a class="label label-primary">UITS Computer Club</a><br>
-				<a href="http://uits.edu.bd">University of Information Technology and Sciences (UITS)</a><span
-					class="pull-right">Dhaka,
-					Bangladesh</span><br>
-				<ul>
-					<li>Prepared the university teams to attend national and international level programming contests
-						conducting sessions and
-						hosting programming contests</li>
-				</ul>
-				</p>
-			</div>
-		</div>
-
 		<!-- Research section with blue background -->
-		<h3 id="projects"><b>Projects</b></h3>
-		<hr>
-		<div class="row">
-			<div class="col-md-10">
-				<b class="pull-left">Synthesizing High Quality Programs Using Guided Bottom-Up Search</b><span
-					class="pull-right">
-					<span class="label label-primary">Dec 2021 -- Present</span> </span>
-			</div>
-			<div class="col-md-10">
-				<div class="text-justify" class="panel-body">
-					<ul>
-						<li>Implemented a novel approach to augmenting DSL to generate high - quality programs to ensure
-							efficient computation time and minimize memory consumption.</li>
-						<li>Implemented a novel approach of guiding bottom - up search to synthesize code for drawing
-							from any
-							input image.</li>
-					</ul>
+		<div id="projects">
+			<b>
+				<h3>Projects</h3>
+			</b>
+			<hr>
+			<div class="row">
+				<div class="panel-heading">
+					<b class="pull-left">Synthesizing High Quality Programs Using Guided Bottom-Up Search</b><span
+						class="pull-right">
+						<span class="label label-primary">Dec 2021 -- Present</span> </span>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Implemented a novel approach to augmenting DSL to generate high - quality programs to
+								ensure
+								efficient computation time and minimize memory consumption.</li>
+							<li>Implemented a novel approach of guiding bottom - up search to synthesize code for
+								drawing
+								from any
+								input image.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-10">
-				<b class="pull-left">Debiasing Multiclass Demographics in Language Models</b><span
-					class="pull-right"><span class="label label-primary">Sep 2021 -- Dec 2021</span> </span>
-			</div>
-			<div class="col-md-10">
-				<div class="text-justify" class="panel-body">
-					<ul>
-						<li>Implemented a new regularizer to debias multiclass demographics in language models which
-							reduced the
-							biases by 3% for several individual classes within a demographic.</li>
-						<li>Contributed a word list for 4 demographics where each of the single demographics consists of
-							6
-							classes to evaluate the fairness of language models.</li>
-					</ul>
+			<hr>
+			<div class="row">
+				<div class="panel-heading">
+					<b class="pull-left">Debiasing Multiclass Demographics in Language Models</b><span
+						class="pull-right"><span class="label label-primary">Sep 2021 -- Dec 2021</span> </span>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Implemented a new regularizer to debias multiclass demographics in language models which
+								reduced the
+								biases by 3% for several individual classes within a demographic.</li>
+							<li>Contributed a word list for 4 demographics where each of the single demographics
+								consists of
+								6
+								classes to evaluate the fairness of language models.</li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<i class="fa fa-code" aria-hidden="true"> Python</i>
+						<a class="fa fa-github" href="https://github.com/akashsara/debiasing-language-models"> Link</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-10">
-				<b class="pull-left">How is Testing Related to Single Statement Bugs?</b><span class="pull-right"> <span
-						class="label label-primary">Jan 2021 -- Apr 2021</span> </span>
-			</div>
-			<div class="col-md-10">
-				<div class="text-justify" class="panel-body">
-					<ul>
-						<li>Predicted a weak to moderate correlation (r-value 0.40) between test coverage and single
-							statement
-							bugs by evaluating 25 open-source maven based java projects.</li>
-						<li>Suggested adding more unit tests and increasing the test coverage to mitigate the single
-							statement
-							bugs by at least 10%.</li>
-					</ul>
+			<hr>
+			<div class="row">
+				<div class="panel-heading">
+					<b class="pull-left">How is Testing Related to Single Statement Bugs?</b>
+					<span class="pull-right"> <span class="label label-primary">Jan 2021 -- Apr 2021</span> </span>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Predicted a weak to moderate correlation (r-value 0.40) between test coverage and single
+								statement
+								bugs by evaluating 25 open-source maven based java projects.</li>
+							<li>Suggested adding more unit tests and increasing the test coverage to mitigate the single
+								statement
+								bugs by at least 10%.</li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<i class="fa fa-code" aria-hidden="true"> Python</i>
+						<a class="fa fa-github" href="https://github.com/habibrahmanbd/SSBandTesting"> Link</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-10">
-				<b class="pull-left">Data Augmentation in NMT: A Case-study for English to Portuguese
-					Translation</b><span class="pull-right"><span class=" label label-primary">Jan 2021 -- Apr
-						2021</span> </span>
-			</div>
-			<div class="col-md-10">
-				<div class="text-justify" class="panel-body">
-					<ul>
-						<li>Implemented and tested different data augmentation techniques for translating English
-							sentences into
-							Portuguese using Recurrent Neural Network with Long Short-Term Memory (LSTM) and Transformer
-						</li>
-					</ul>
+			<hr>
+			<div class="row">
+				<div class="panel-heading">
+					<b class="pull-left">Data Augmentation in NMT: A Case-study for English to Portuguese
+						Translation</b><span class="pull-right"><span class=" label label-primary">Jan 2021 -- Apr
+							2021</span> </span>
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Implemented and tested different data augmentation techniques for translating English
+								sentences into
+								Portuguese using Recurrent Neural Network with Long Short-Term Memory (LSTM) and
+								Transformer
+							</li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<i class="fa fa-code" aria-hidden="true"> Python</i>
+						<a class="fa fa-github" href="https://github.com/habibrahmanbd/Data-Augmentation-in-NMT">
+							Link</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-md-10">
-				<b class="pull-left">Java Repo Miner</b><span class="pull-right"><span
-						class="label label-primary">2018</span>
-				</span>
-			</div>
-			<div class="col-md-10">
-				<div class="text-justify" class="panel-body">
-					<ul>
-						<li>Developed a tool to detect java method signature after and before a commit and to make a
-							report of
-							changing frequencies of Methods, Classes, Libraries, and Loops in a git repository</li>
-					</ul>
+			<hr>
+			<div class="row">
+				<div class="panel-heading">
+					<b class="pull-left">Java Repo Miner</b><span class="pull-right"><span
+							class="label label-primary">2018</span>
+					</span>
 				</div>
-				<div class="text-justify" class="panel-body">
-					<ul>
-						<li>Language: <i class="fa-brands fa-python"></i> <i class="fa fa-github">Repo:</i>
-							<a href="https://github.com/habibrahmanbd/JavaRepoMiner">habibrahmanbd/JavaRepoMiner</a>
-						</li>
-					</ul>
+				<div class="col-md-10">
+					<div class="text-justify" class="panel-body">
+						<ul>
+							<li>Developed a tool to detect java method signature after and before a commit and to make a
+								report of
+								changing frequencies of Methods, Classes, Libraries, and Loops in a git repository</li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<i class="fa fa-code" aria-hidden="true"> Java, Python</i>
+						<a class="fa fa-github" href="https://github.com/habibrahmanbd/JavaRepoMiner"> Link</a>
+					</div>
 				</div>
 			</div>
 		</div>
