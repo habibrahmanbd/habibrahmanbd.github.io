@@ -1,8 +1,8 @@
 :root {
     --text-color-light: #000;
-    --background-color-light: #fff;
+    --background-color-light: #ffffff;
     --text-color-dark: #fff;
-    --background-color-dark: #121212;
+    --background-color-dark: #313131;
   }
   
   [data-theme="light"] {
@@ -14,59 +14,42 @@
     --text-color: var(--text-color-dark);
     --background-color: var(--background-color-dark);
   }
+
   .theme-switch-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 20px;
+    font-size: 20px;
   }
   
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
+  .fas.fa-moon, .fas.fa-sun {
+    cursor: pointer;
+    transition: color 0.3s;
   }
   
-  .theme-switch input {
+  [data-theme="light"] .fas.fa-moon {
     display: none;
   }
   
-  .slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
+  [data-theme="dark"] .fas.fa-sun {
+    display: none;
   }
   
-  .slider:before {
-    background-color: white;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
+  [data-theme="light"] .fas.fa-sun {
+    color: #ffc107; /* Sun icon color in light mode */
   }
   
-  input:checked + .slider {
-    background-color: #66bb6a;
+  [data-theme="dark"] .fas.fa-moon {
+    color: #f8f9fa; /* Moon icon color in dark mode */
   }
   
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
   
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  
+  body {
+    margin: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}

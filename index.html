@@ -8,13 +8,11 @@
 	<meta name="description"
 		content="Habibur Rahman is a Graduate Research Fellow at Alberta Machine Intelligence Institute (amii), and Former Software Engineer at Samsung R&D Institute Bangladesh Ltd. (SRBD). Currently, he is completing his MSc in Computing Science at the University of Alberta.">
 	<link rel="icon" type="image/x-icon" href="assets/H_1.ico">
-	<link rel="apple-touch-icon" sizes="57x57" href="">
-	<link rel="apple-touch-icon" sizes="72x72" href="">
-	<link rel="apple-touch-icon" sizes="114x114" href="">
-	<link rel="apple-touch-icon" sizes="144x144" href="">
 	<link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/css/all.css">
-	<link rel="stylesheet" href="assets/light-dark-style.css"> <!-- Link to your styles.css -->
+	<link rel="stylesheet" href="assets/light-dark-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZuuL9HC2mDr1ae0u6VjeCwYPZl9I1zNR60Wp6NI4D7lyB5R8BF9PXZrmdO5AOO" crossorigin="anonymous">
+    <script src="assets/theme-toggle.js" defer></script>
 	<style>
 		body {
 			padding-top: 70px;
@@ -31,20 +29,6 @@
 			$("#headerIncluder").load("header.html");
 			$("#footerIncluder").load("footer.html");
 		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", (event) => {
-			const savedTheme = localStorage.getItem("theme") || "light";
-			document.documentElement.setAttribute("data-theme", savedTheme);
-		});
-	</script>
-	<script>
-		function toggleTheme() {
-		const themeCheckbox = document.getElementById('checkbox');
-		const newTheme = themeCheckbox.checked ? "dark" : "light";
-		document.documentElement.setAttribute("data-theme", newTheme);
-		localStorage.setItem("theme", newTheme);
-		}
 	</script>
 	  
 	<!-- Global site tag (gtag.js) - Google Analytics -->

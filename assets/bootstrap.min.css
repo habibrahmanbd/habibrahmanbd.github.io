@@ -28,8 +28,6 @@ html
 body
 {
     margin: 0;
-    color: var(--text-color);
-    background-color: var(--background-color);
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary
