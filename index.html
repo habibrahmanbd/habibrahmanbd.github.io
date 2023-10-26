@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="">
 	<link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/css/all.css">
-
+	<link rel="stylesheet" href="assets/light-dark-style.css"> <!-- Link to your styles.css -->
 	<style>
 		body {
 			padding-top: 70px;
@@ -32,6 +32,21 @@
 			$("#footerIncluder").load("footer.html");
 		});
 	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", (event) => {
+			const savedTheme = localStorage.getItem("theme") || "light";
+			document.documentElement.setAttribute("data-theme", savedTheme);
+		});
+	</script>
+	<script>
+		function toggleTheme() {
+		const themeCheckbox = document.getElementById('checkbox');
+		const newTheme = themeCheckbox.checked ? "dark" : "light";
+		document.documentElement.setAttribute("data-theme", newTheme);
+		localStorage.setItem("theme", newTheme);
+		}
+	</script>
+	  
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT6J4JQJXM"></script>
 	<script>
@@ -114,7 +129,7 @@
 		<hr>
 		<div class="row">
 			<ul class="list-inline text-center">
-				<li class="list-inline-item"><a href="assets/habibur_rahman_resume_SWE.html"><i class="fa fa-file fa-1x"
+				<li class="list-inline-item"><a href="assets/habibur_rahman_resume_ML.html"><i class="fa fa-file fa-1x"
 							alt="Resume"></i> Resume</a></li>|
 				<li class="list-inline-item"><a href="https://www.linkedin.com/in/habibrahmanbd/"><i
 							class="fab fa-linkedin fa-1x" alt="LinkedIn"></i>

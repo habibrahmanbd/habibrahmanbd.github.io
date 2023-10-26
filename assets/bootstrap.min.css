@@ -28,6 +28,8 @@ html
 body
 {
     margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary
@@ -6699,7 +6701,7 @@ button.list-group-item
     z-index: 2;
     color: #ffffff;
     background-color: #0275d8;
-    border-color: ;
+    border-color: #fbe2da;
 }
 
 .list-group-item.active .list-group-item-heading,.list-group-item.active:hover .list-group-item-heading,.list-group-item.active:focus .list-group-item-heading,.list-group-item.active .list-group-item-heading>small,.list-group-item.active:hover .list-group-item-heading>small,.list-group-item.active:focus .list-group-item-heading>small,.list-group-item.active .list-group-item-heading>.small,.list-group-item.active:hover .list-group-item-heading>.small,.list-group-item.active:focus .list-group-item-heading>.small
