@@ -19,9 +19,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 20px;
     font-size: 20px;
-  }
+    position: fixed;
+    right: 2%;
+    top: 1.2%; /* Adjust according to your preference */
+    z-index: 1030; /* Ensure it's above the navbar */
+}
   
   .fas.fa-moon, .fas.fa-sun {
     cursor: pointer;
@@ -53,3 +56,17 @@
     color: var(--text-color);
     background-color: var(--background-color);
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .theme-switch-wrapper {
+        top: 2%;
+        right: 10px;
+    }
+}
+  
+  /* Adjust Visibility Based on Theme */
+  [data-theme='light'] .fas.fa-moon,
+  [data-theme='dark'] .fas.fa-sun {
+    display: none;
+  }

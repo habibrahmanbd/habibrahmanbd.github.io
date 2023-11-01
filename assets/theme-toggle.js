@@ -9,17 +9,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   
     // Get saved theme from localStorage, or set to default based on time
-    const savedTheme = localStorage.getItem("theme") || (isNightTime() ? "dark" : "light");
-    document.documentElement.setAttribute("data-theme", savedTheme);
-    const themeToggle = document.getElementById('checkbox');
-  
-    if (savedTheme === "dark") {
-      themeToggle.checked = true;
-    } else {
-      themeToggle.checked = false;
+    try{
+        const savedTheme = localStorage.getItem("theme") || (isNightTime() ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", savedTheme);
+        const themeToggle = document.getElementById('checkbox');
+    
+        if (savedTheme === "dark") {
+        themeToggle.checked = true;
+        } else {
+        themeToggle.checked = false;
+        }
+    
+        console.log("Theme loaded: " + savedTheme);
+    } catch (e) {
+        console.log("Local storage is not supported in this browser");
     }
-  
-    console.log("Theme loaded: " + savedTheme);
   });
   
   
