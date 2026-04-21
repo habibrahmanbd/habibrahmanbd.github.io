@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head >
-        <title>Projects</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Habibur Rahman, Software Engineer, Samsung R&D Institute Bangladesh Ltd. (SRBD)">
-        <link rel="icon" type="image/x-icon" href="assets/H_1.ico">
-        <link rel="apple-touch-icon" sizes="57x57" href="">
-        <link rel="apple-touch-icon" sizes="72x72" href="">
-        <link rel="apple-touch-icon" sizes="114x114" href="">
-        <link rel="apple-touch-icon" sizes="144x144" href="">
-        <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/css/all.css">
-        <style>
-            body {
-            padding-top: 70px;
-            }
-            .navbar-toggle {
-            margin-right: 0px;
-            }
 
-        </style>
-        <script src="assets/jquery.min.js"></script>
-        <script src="assets/bootstrap.min.js"></script>
-        <script> 
-        $(function(){
-          $("#headerIncluder").load("header.html");
-          $("#footerIncluder").load("footer.html"); 
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects by Habibur Rahman.">
+    <link rel="icon" type="image/x-icon" href="assets/H_1.ico">
+    <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/light-dark-style.css">
+    <script src="assets/theme-toggle.js" defer></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#headerIncluder").load("header.html");
+            $("#footerIncluder").load("footer.html");
         });
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HT6J4JQJXM"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    </script>
+</head>
 
-        gtag('config', 'G-HT6J4JQJXM');
-        </script>
-    </head>
-    <body>
-        <div id="headerIncluder"></div>
-        <div style="padding-left: 100px;" class = "col-md-10" >
-            <h1><b>Projects</b><br><hr></h1>
-        </div>
-        <div class="col-md-12">
-            <div style="padding-left: 100px;" class="panel-body">
-                <h3><span>•</span><a href="https://github.com/habibrahmanbd/JavaRepoMiner"> Java Repo Miner</a></h3>
-                <p style="padding-left: 20px;"class="info">2018<br>Tool to detect java method signature after and before a commit, and to make a report of changing frequencies of Methods, Classes, Libraries, and Loops in a git repository<br>Language: Python</p>
+<body>
+    <div id="headerIncluder"></div>
 
-                <h3><span>•</span><a href="https://github.com/habibrahmanbd/BanglaPDFtoBanglaDOC"> Bangla PDF to Bangla DOC</a></h3> 
-                <p style="padding-left: 20px;"class="info">2016<br>Bangla PDF to Doc converter is a free software to convert the Bangla PDF to Doc.<br>Language: Java</p>
+    <main class="container page-shell">
+        <section class="page-hero">
+            <p class="page-kicker">Build Log</p>
+            <h1>Selected Projects</h1>
+            <p>Practical products and tools across ML, software engineering, and education.</p>
+        </section>
 
-                <h3><span>•</span><a href="https://github.com/habibrahmanbd/onlinelabsystem"> Online Lab Sytem</a></h3> 
-                <p style="padding-left: 20px;"class="info">2015<br>An online Judding System to Host programming contests online. This platform has code compilation, highlight, submitting features on user side. On admin site, problem creatation, update, input file, output file, run time etc. features are available.<br>Language: PHP, HTML,CSS</p>
+        <section class="project-grid">
+            <article class="content-card project-item">
+                <h3><a href="https://github.com/habibrahmanbd/JavaRepoMiner">Java Repo Miner</a></h3>
+                <p class="item-meta">2018 - Python</p>
+                <p>Tool to detect Java method signature changes before/after commits and report frequencies of methods, classes, libraries, and loops in Git repositories.</p>
+            </article>
 
-                <h3><span>•</span><a href="https://github.com/habibrahmanbd/dailyCalorieCalculator/tree/master"> Daily Calorie Calculator</a></h3> 
-                <p style="padding-left: 20px;"class="info">2014<br>Application for Desktop Computers to calculate daily Life Calorie calculation to live an healthy and happiest life.<br>Language: Java</p>
+            <article class="content-card project-item">
+                <h3><a href="https://github.com/habibrahmanbd/BanglaPDFtoBanglaDOC">Bangla PDF to Bangla DOC</a></h3>
+                <p class="item-meta">2016 - Java</p>
+                <p>Desktop utility to convert Bangla PDF files into editable DOC format.</p>
+            </article>
 
-                <h3><span>•</span><a href="https://github.com/habibrahmanbd/Game-Rakhal"> Game Rakhal</a></h3> 
-                <p style="padding-left: 20px;"class="info">2014<br>Rakhal(রাখাল) is a Bangla word, in English which is cowboy. In Bangladesh past few decades they were used to play flute and several games while on the field the cows. This game is one of that games.<br>Language: Java</p>
+            <article class="content-card project-item">
+                <h3><a href="https://github.com/habibrahmanbd/onlinelabsystem">Online Lab System</a></h3>
+                <p class="item-meta">2015 - PHP, HTML, CSS</p>
+                <p>Online programming contest platform with code submission and execution, plus problem and judge configuration for admins.</p>
+            </article>
 
-                <h3><span>•</span><a href="https://github.com/habibrahmanbd/nirob-blood-app"> Blood Bank Management</a></h3> 
-                <p style="padding-left: 20px;"class="info">2014<br>A Desktop application to manage Blood Bank where the manager can Insert, Update, Delete blood donors and their information. Search can be performed based on the blood group and last donation date.<br>Language: Java</p>
-                
-            </div>
-           <div id="footerIncluder"></div>
-    </body>
+            <article class="content-card project-item">
+                <h3><a href="https://github.com/habibrahmanbd/dailyCalorieCalculator/tree/master">Daily Calorie Calculator</a></h3>
+                <p class="item-meta">2014 - Java</p>
+                <p>Desktop application for daily calorie tracking and healthy lifestyle planning.</p>
+            </article>
+
+            <article class="content-card project-item">
+                <h3><a href="https://github.com/habibrahmanbd/Game-Rakhal">Game Rakhal</a></h3>
+                <p class="item-meta">2014 - Java</p>
+                <p>A culturally inspired desktop game based on traditional field games from Bangladesh.</p>
+            </article>
+
+            <article class="content-card project-item">
+                <h3><a href="https://github.com/habibrahmanbd/nirob-blood-app">Blood Bank Management</a></h3>
+                <p class="item-meta">2014 - Java</p>
+                <p>Desktop system to manage donor records with insert, update, delete, and search features by blood type and donation date.</p>
+            </article>
+        </section>
+    </main>
+
+    <div id="footerIncluder"></div>
+</body>
+
 </html>
