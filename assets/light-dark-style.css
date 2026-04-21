@@ -1,72 +1,480 @@
 :root {
-    --text-color-light: #000;
-    --background-color-light: #ffffff;
-    --text-color-dark: #fff;
-    --background-color-dark: #313131;
+  --bg-main: #f3efe6;
+  --bg-elevated: rgba(255, 255, 255, 0.78);
+  --bg-accent: #183f3a;
+  --text-main: #1b1f23;
+  --text-muted: #46505a;
+  --brand: #c15c20;
+  --brand-soft: #f2dfcc;
+  --line: rgba(24, 63, 58, 0.16);
+  --shadow-strong: 0 22px 60px rgba(22, 36, 46, 0.16);
+  --shadow-card: 0 8px 24px rgba(20, 30, 40, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg-main: #10181d;
+  --bg-elevated: rgba(22, 31, 38, 0.86);
+  --bg-accent: #6cc4b4;
+  --text-main: #ecf2f7;
+  --text-muted: #aec0ce;
+  --brand: #f79e67;
+  --brand-soft: rgba(247, 158, 103, 0.2);
+  --line: rgba(123, 174, 201, 0.26);
+  --shadow-strong: 0 22px 70px rgba(0, 0, 0, 0.42);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(193, 92, 32, 0.1), transparent 45%),
+    radial-gradient(circle at 90% 10%, rgba(17, 77, 66, 0.14), transparent 35%),
+    linear-gradient(180deg, var(--bg-main) 0%, color-mix(in srgb, var(--bg-main) 90%, #ffffff 10%) 100%);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: "Outfit", "Trebuchet MS", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: color-mix(in srgb, var(--bg-accent) 82%, black 18%);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.modern-nav {
+  border: 0;
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg-main) 66%, #0a1113 34%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+.modern-nav .navbar-brand,
+.modern-nav .navbar-nav > li > a {
+  color: #f3f8fb;
+}
+
+.brand-signature {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.modern-nav .navbar-nav > li > a {
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 999px;
+  margin-top: 8px;
+  margin-right: 4px;
+  transition: background 0.22s ease, transform 0.22s ease;
+}
+
+.modern-nav .navbar-nav > li > a:hover,
+.modern-nav .navbar-nav > li.open > a,
+.modern-nav .navbar-nav > li.open > a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.modern-nav .dropdown-menu {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.modern-nav .dropdown-menu > li > a {
+  padding: 10px 16px;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  position: fixed;
+  right: 24px;
+  top: 14px;
+  z-index: 1031;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.fas.fa-moon,
+.fas.fa-sun {
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.fas.fa-moon:hover,
+.fas.fa-sun:hover {
+  transform: scale(1.08);
+}
+
+[data-theme="light"] .fas.fa-moon,
+[data-theme="dark"] .fas.fa-sun {
+  display: none;
+}
+
+[data-theme="light"] .fas.fa-sun {
+  color: #ffcb4d;
+}
+
+[data-theme="dark"] .fas.fa-moon {
+  color: #f5f9ff;
+}
+
+.home-shell {
+  font-size: 18px;
+  padding-top: 10px;
+  animation: reveal-up 0.6s ease;
+}
+
+.hero-row {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  box-shadow: var(--shadow-strong);
+  overflow: hidden;
+}
+
+.hero-image-wrap {
+  padding: 32px 20px;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--bg-accent) 86%, transparent), color-mix(in srgb, var(--brand) 55%, transparent));
+}
+
+.profile-photo {
+  width: 210px;
+  max-width: 100%;
+  border-radius: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.26);
+}
+
+.hero-intro {
+  padding: 34px 36px 30px;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: clamp(34px, 5.2vw, 52px);
+  font-weight: 800;
+  line-height: 1.04;
+}
+
+.hero-bio {
+  color: var(--text-main);
+  font-size: 19px;
+  max-width: 900px;
+}
+
+.venture-strip {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.venture-label {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.venture-strip a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 16px;
+  background: color-mix(in srgb, var(--bg-elevated) 65%, #ffffff 35%);
+  box-shadow: var(--shadow-card);
+  font-weight: 600;
+}
+
+.venture-logo {
+  min-height: 52px;
+}
+
+.venture-logo img {
+  height: 34px;
+  width: auto;
+  max-width: 145px;
+  object-fit: contain;
+  display: block;
+}
+
+.venture-harvo {
+  background: #183f3a;
+  border-color: rgba(245, 240, 232, 0.2);
+}
+
+.harvo-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.harvo-mark span {
+  font-family: "Outfit", "Trebuchet MS", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f5f0e8;
+  line-height: 1;
+}
+
+[data-theme="dark"] .venture-logo {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="dark"] .venture-harvo {
+  background: #14322e;
+}
+
+.notice-banner,
+.recent-updates {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.recent-updates ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.recent-updates li {
+  margin-bottom: 8px;
+}
+
+.quick-links {
+  background: color-mix(in srgb, var(--bg-accent) 11%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 8px 4px;
+}
+
+.quick-links .list-inline-item {
+  margin: 0 6px 10px;
+}
+
+.quick-links a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-card);
+  font-weight: 600;
+}
+
+#experiences,
+#projects,
+#publications,
+#skills {
+  margin-top: 24px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 18px 20px 8px;
+  box-shadow: var(--shadow-card);
+}
+
+#experiences h3,
+#projects h3,
+#publications h3,
+#skills h3 {
+  margin-top: 4px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.panel-heading {
+  font-size: 17px;
+}
+
+.label {
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.38em 0.85em;
+}
+
+.label-danger {
+  background-color: #bf4d1e;
+}
+
+.label-success {
+  background-color: #1f8873;
+}
+
+.label-warning {
+  background-color: #d08a2f;
+}
+
+.label-primary {
+  background-color: #2a6fbd;
+}
+
+hr {
+  border-top: 1px solid var(--line);
+  margin: 18px 0;
+}
+
+.row {
+  margin-bottom: 6px;
+}
+
+img.thumbnail {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 0 0 30px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.site-footer p {
+  margin: 8px auto 0;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
   }
-  
-  [data-theme="light"] {
-    --text-color: var(--text-color-light);
-    --background-color: var(--background-color-light);
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  [data-theme="dark"] {
-    --text-color: var(--text-color-dark);
-    --background-color: var(--background-color-dark);
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 72px;
   }
 
   .theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 20px;
-    position: fixed;
-    right: 2%;
-    top: 1.2%; /* Adjust according to your preference */
-    z-index: 1030; /* Ensure it's above the navbar */
-}
-  
-  .fas.fa-moon, .fas.fa-sun {
-    cursor: pointer;
-    transition: color 0.3s;
+    right: 12px;
+    top: 12px;
+    width: 38px;
+    height: 38px;
   }
-  
-  [data-theme="light"] .fas.fa-moon {
-    display: none;
+
+  .brand-signature {
+    font-size: 18px;
   }
-  
-  [data-theme="dark"] .fas.fa-sun {
-    display: none;
+
+  .hero-intro {
+    padding: 24px 18px 18px;
   }
-  
-  [data-theme="light"] .fas.fa-sun {
-    color: #ffc107; /* Sun icon color in light mode */
+
+  .hero-image-wrap {
+    padding: 22px 20px 8px;
   }
-  
-  [data-theme="dark"] .fas.fa-moon {
-    color: #f8f9fa; /* Moon icon color in dark mode */
+
+  .panel-heading,
+  .home-shell {
+    font-size: 17px;
   }
-  
-  
-  body {
-    margin: 0;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: var(--text-color);
-    background-color: var(--background-color);
+
+  #experiences,
+  #projects,
+  #publications,
+  #skills {
+    border-radius: 16px;
+    padding: 14px 14px 6px;
+  }
+
+  [id="headerIncluder"] .navbar-collapse {
+    background: color-mix(in srgb, var(--bg-main) 72%, #0a1113 28%);
+    border-radius: 14px;
+    margin-top: 8px;
+    padding: 6px;
+  }
 }
 
-/* Mobile View */
-@media (max-width: 768px) {
-    .theme-switch-wrapper {
-        top: 2%;
-        right: 10px;
-    }
-}
-  
-  /* Adjust Visibility Based on Theme */
-  [data-theme='light'] .fas.fa-moon,
-  [data-theme='dark'] .fas.fa-sun {
-    display: none;
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 34px;
   }
+
+  .hero-bio {
+    font-size: 17px;
+  }
+
+  .quick-links .list-inline-item {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .venture-strip {
+    gap: 8px;
+  }
+
+  .venture-logo {
+    min-height: 46px;
+    padding: 6px 12px;
+  }
+
+  .venture-logo img {
+    height: 28px;
+    max-width: 120px;
+  }
+
+  .harvo-mark span {
+    font-size: 16px;
+  }
+
+  .pull-right {
+    float: none !important;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .panel-heading,
+  .panel-body {
+    overflow-wrap: anywhere;
+  }
+}

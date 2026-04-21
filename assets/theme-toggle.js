@@ -9,18 +9,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   
     // Get saved theme from localStorage, or set to default based on time
-    try{
-        const savedTheme = localStorage.getItem("theme") || (isNightTime() ? "dark" : "light");
-        document.documentElement.setAttribute("data-theme", savedTheme);
-        const themeToggle = document.getElementById('checkbox');
-    
-        if (savedTheme === "dark") {
-        themeToggle.checked = true;
-        } else {
-        themeToggle.checked = false;
-        }
-    
-        console.log("Theme loaded: " + savedTheme);
+    try {
+      const savedTheme = localStorage.getItem("theme") || (isNightTime() ? "dark" : "light");
+      const themeToggle = document.getElementById('checkbox');
+
+      document.documentElement.setAttribute("data-theme", savedTheme);
+
+      if (themeToggle) {
+        themeToggle.checked = savedTheme === "dark";
+      }
+
+      console.log("Theme loaded: " + savedTheme);
     } catch (e) {
         console.log("Local storage is not supported in this browser");
     }
@@ -28,14 +27,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
   
   function toggleTheme() {
-    const theme = document.documentElement.getAttribute('data-theme');
-    if (theme === 'light') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light');
-    }
+      const theme = document.documentElement.getAttribute('data-theme');
+      const nextTheme = theme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', nextTheme);
+
+      try {
+        localStorage.setItem('theme', nextTheme);
+      } catch (e) {
+        console.log('Could not save theme preference');
+      }
   }
   
   
