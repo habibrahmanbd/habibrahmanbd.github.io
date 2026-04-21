@@ -27,16 +27,21 @@
 <body>
     <div id="headerIncluder"></div>
 
-    <main class="container page-shell">
-        <section class="page-hero">
-            <p class="page-kicker">Research Output</p>
-            <h1>Publications</h1>
-            <p>Peer-reviewed publications and research contributions.</p>
-        </section>
+    <main class="container home-shell">
+        <div class="bento-item-hero" style="padding: 40px 20px;">
+            <div class="hero-title-inline">
+                Academic <span class="brand-text">Publications</span>
+            </div>
+            <p class="hero-subtext" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                Peer-reviewed publications and research contributions.
+            </p>
+        </div>
 
-        <section class="content-card bibliography-card">
-            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fhabibrahmanbd%2Fhabibrahmanbd.github.io%2Fmaster%2Fassets%2Fbibliography.bib&jsonp=1"></script>
-        </section>
+        <div class="bento-grid">
+            <div class="bento-item" style="grid-column: span 12;">
+                <script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fhabibrahmanbd%2Fhabibrahmanbd.github.io%2Fmaster%2Fassets%2Fbibliography.bib&jsonp=1"></script>
+            </div>
+        </div>
     </main>
 
     <div id="footerIncluder"></div>

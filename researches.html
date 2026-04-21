@@ -27,51 +27,85 @@
 <body>
     <div id="headerIncluder"></div>
 
-    <main class="container page-shell">
-        <section class="page-hero">
-            <p class="page-kicker">Lab Work</p>
-            <h1>Research Highlights</h1>
-            <p>Program synthesis, trustworthy ML, and applied software engineering research.</p>
-        </section>
+    <main class="container home-shell">
+        <div class="bento-item-hero" style="padding: 40px 20px;">
+            <div class="hero-title-inline">
+                Research <span class="brand-text">Highlights</span>
+            </div>
+            <p class="hero-subtext" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                Program synthesis, trustworthy ML, and applied software engineering research.
+            </p>
+        </div>
 
-        <section class="content-card list-card">
-            <article class="entry-item">
-                <h3>Synthesizing High Quality Programs Using Guided Bottom-Up Search</h3>
-                <p class="item-meta">Dec 2021 - Present</p>
-                <ul>
-                    <li>Implemented a novel approach to augmenting DSL to generate high-quality programs with efficient compute and memory usage.</li>
-                    <li>Implemented a guided bottom-up search approach to synthesize code from input images.</li>
-                </ul>
-            </article>
+        <div class="bento-grid">
+            <div class="bento-item" style="grid-column: span 12;">
+                
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Synthesizing High Quality Programs Using Guided Bottom-Up Search</div>
+                        <div class="item-meta">Dec 2021 - Present</div>
+                        <div class="pill-label">Synthesis</div><div class="pill-label">Optimization</div>
+                        <div class="item-body">
+                            <ul style="padding-left:16px; margin:8px 0 0;">
+                                <li>Implemented a novel approach to augmenting DSL to generate high-quality programs with efficient compute and memory usage.</li>
+                                <li>Implemented a guided bottom-up search approach to synthesize code from input images.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <article class="entry-item">
-                <h3>Debiasing Multiclass Demographics in Language Models</h3>
-                <p class="item-meta">Sep 2021 - Dec 2021</p>
-                <ul>
-                    <li>Implemented a regularizer to debias multiclass demographics in language models and reduced bias for multiple demographic classes.</li>
-                    <li>Contributed a demographic word list used to evaluate model fairness.</li>
-                </ul>
-            </article>
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Debiasing Multiclass Demographics in Language Models</div>
+                        <div class="item-meta">Sep 2021 - Dec 2021</div>
+                        <div class="pill-label">NLP</div><div class="pill-label">Trustworthy AI</div>
+                        <div class="item-body">
+                            <ul style="padding-left:16px; margin:8px 0 0;">
+                                <li>Implemented a regularizer to debias multiclass demographics in language models and reduced bias for multiple demographic classes.</li>
+                                <li>Contributed a demographic word list used to evaluate model fairness.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <article class="entry-item">
-                <h3>How Is Testing Related to Single Statement Bugs?</h3>
-                <p class="item-meta">Jan 2021 - Apr 2021</p>
-                <ul>
-                    <li>Observed weak-to-moderate correlation (r = 0.40) between test coverage and single-statement bugs in open-source Java projects.</li>
-                    <li>Suggested test coverage improvements to reduce bug prevalence.</li>
-                </ul>
-            </article>
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">How Is Testing Related to Single Statement Bugs?</div>
+                        <div class="item-meta">Jan 2021 - Apr 2021</div>
+                        <div class="pill-label">Software Engineering</div>
+                        <div class="item-body">
+                            <ul style="padding-left:16px; margin:8px 0 0;">
+                                <li>Observed weak-to-moderate correlation (r = 0.40) between test coverage and single-statement bugs in open-source Java projects.</li>
+                                <li>Suggested test coverage improvements to reduce bug prevalence.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <article class="entry-item">
-                <h3>Solving Arithmetic Word Problems by Semantic Parsing</h3>
-                <p>Used semantic parsing to ground algebraic word problems into entities and equation trees, then combined local/global classifiers with probabilistic scoring to generate candidate equations.</p>
-            </article>
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Solving Arithmetic Word Problems by Semantic Parsing</div>
+                        <div class="item-meta">Older Works</div>
+                        <div class="pill-label">Semantic Parsing</div>
+                        <div class="item-body">
+                            Used semantic parsing to ground algebraic word problems into entities and equation trees, then combined local/global classifiers with probabilistic scoring to generate candidate equations.
+                        </div>
+                    </div>
+                </div>
 
-            <article class="entry-item">
-                <h3>Statistical Approach for Classifying Sentiment Reviews</h3>
-                <p>Focused on reducing-dimensional sentiment modeling for fast and cost-efficient polarity classification of unstructured public comments.</p>
-            </article>
-        </section>
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Statistical Approach for Classifying Sentiment Reviews</div>
+                        <div class="item-meta">Older Works</div>
+                        <div class="pill-label">Sentiment Analysis</div>
+                        <div class="item-body">
+                            Focused on reducing-dimensional sentiment modeling for fast and cost-efficient polarity classification of unstructured public comments.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <div id="footerIncluder"></div>

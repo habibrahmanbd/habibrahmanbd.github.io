@@ -27,70 +27,93 @@
 <body>
     <div id="headerIncluder"></div>
 
-    <main class="container page-shell">
-        <section class="page-hero">
-            <p class="page-kicker">Beyond Work</p>
-            <h1>Miscellaneous</h1>
-            <p>Community service, programming contests, and memberships.</p>
-        </section>
+    <main class="container home-shell">
+        <div class="bento-item-hero" style="padding: 40px 20px;">
+            <div class="hero-title-inline">
+                Beyond <span class="brand-text">Work</span>
+            </div>
+            <p class="hero-subtext" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                Community service, programming contests, and memberships.
+            </p>
+        </div>
 
-        <section class="content-card" id="services">
-            <h2>Services</h2>
-            <div class="entry-item">
-                <h3>Programming Contest Mentor</h3>
-                <p>January 2018 - Present, UITS Computer Club, Dhaka, Bangladesh.</p>
-            </div>
-            <div class="entry-item">
-                <h3>Coach</h3>
-                <p>Department of Computer Science and Engineering, UITS.</p>
-            </div>
-            <div class="entry-item">
-                <h3>Problem Setter and Judge</h3>
-                <p>Devskill Coding Contest'15, Ahmed Zubayer Intra University Programming Contest 2018, RUET GyanJam 2017, Codesmash'17.</p>
-            </div>
-        </section>
+        <div class="bento-grid">
+            <div class="bento-item" style="grid-column: span 6;" id="services">
+                <h3>Services</h3>
+                
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Programming Contest Mentor</div>
+                        <div class="item-meta">Jan 2018 - Present • UITS Computer Club</div>
+                    </div>
+                </div>
+                
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Coach</div>
+                        <div class="item-meta">Department of Computer Science and Engineering, UITS</div>
+                    </div>
+                </div>
 
-        <section class="content-card" id="programming">
-            <h2>Programming Contests</h2>
-            <div class="table-wrap">
-                <table class="table template-table">
-                    <thead>
-                        <tr>
-                            <th>Year</th>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Team</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>2014</td><td>Intra RUET University Day Programming Contest</td><td>4th</td><td>RUET_MACROS</td></tr>
-                        <tr><td>2015</td><td>Intra University Programming Contest (IEEE RUET Student Branch)</td><td>Runner Up</td><td>RUET_Gallinule</td></tr>
-                        <tr><td>2015</td><td>CSE RUET NCPC</td><td>46th</td><td>RUET_Gallinule</td></tr>
-                        <tr><td>2015</td><td>IUPC, BUET CSE FEST</td><td>58th</td><td>RUET_Gallinule</td></tr>
-                        <tr><td>2016</td><td>IUPC, NSUSEC</td><td>18th</td><td>RUET_Gallinule</td></tr>
-                        <tr><td>2016</td><td>IUPC, IUT Fest</td><td>17th</td><td>RUET_Gallinule</td></tr>
-                        <tr><td>2016</td><td>ACM-ICPC Dhaka Regional</td><td>22nd, Rajshahi Divisional Champion, Top 10 University</td><td>RUET_OSIRIS</td></tr>
-                        <tr><td>2017</td><td>CUET NCPC</td><td>Honorable Mention</td><td>RUET_Breaking_Condition</td></tr>
-                    </tbody>
-                </table>
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Problem Setter and Judge</div>
+                        <div class="item-meta">Devskill Coding Contest'15, Ahmed Zubayer IUPC 2018, RUET GyanJam 2017, Codesmash'17</div>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section class="content-card" id="memberships">
-            <h2>Memberships</h2>
-            <div class="entry-item">
-                <h3>Founder and Member</h3>
-                <p><a href="https://sysereg.github.io">Syntax and Semantic Research Group, Bangladesh</a>.</p>
+            <div class="bento-item" style="grid-column: span 6;" id="memberships">
+                <h3>Memberships</h3>
+
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Founder and Member</div>
+                        <div class="item-meta"><a href="https://sysereg.github.io" target="_blank">Syntax and Semantic Research Group, Bangladesh <i class="fas fa-external-link-alt" style="font-size:12px"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Contestant</div>
+                        <div class="item-meta">RUET Analytical Programming Lab</div>
+                    </div>
+                </div>
+
+                <div class="item-row">
+                    <div class="item-details">
+                        <div class="item-title">Member</div>
+                        <div class="item-meta">Robotic Society of RUET</div>
+                    </div>
+                </div>
             </div>
-            <div class="entry-item">
-                <h3>Contestant</h3>
-                <p>RUET Analytical Programming Lab.</p>
+
+            <div class="bento-item" style="grid-column: span 12;" id="programming">
+                <h3>Programming Contests</h3>
+                <div class="table-wrap" style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
+                        <thead style="border-bottom: 2px solid var(--line);">
+                            <tr style="text-align: left;">
+                                <th style="padding: 12px 8px;">Year</th>
+                                <th style="padding: 12px 8px;">Name</th>
+                                <th style="padding: 12px 8px;">Position</th>
+                                <th style="padding: 12px 8px;">Team</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size: 15px;">
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2014</td><td style="padding: 12px 8px;">Intra RUET University Day Programming Contest</td><td style="padding: 12px 8px;">4th</td><td style="padding: 12px 8px;">RUET_MACROS</td></tr>
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2015</td><td style="padding: 12px 8px;">Intra University Programming Contest (IEEE RUET)</td><td style="padding: 12px 8px;">Runner Up</td><td style="padding: 12px 8px;">RUET_Gallinule</td></tr>
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2015</td><td style="padding: 12px 8px;">CSE RUET NCPC</td><td style="padding: 12px 8px;">46th</td><td style="padding: 12px 8px;">RUET_Gallinule</td></tr>
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2015</td><td style="padding: 12px 8px;">IUPC, BUET CSE FEST</td><td style="padding: 12px 8px;">58th</td><td style="padding: 12px 8px;">RUET_Gallinule</td></tr>
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2016</td><td style="padding: 12px 8px;">IUPC, NSUSEC</td><td style="padding: 12px 8px;">18th</td><td style="padding: 12px 8px;">RUET_Gallinule</td></tr>
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2016</td><td style="padding: 12px 8px;">IUPC, IUT Fest</td><td style="padding: 12px 8px;">17th</td><td style="padding: 12px 8px;">RUET_Gallinule</td></tr>
+                            <tr style="border-bottom: 1px solid var(--line);"><td style="padding: 12px 8px;">2016</td><td style="padding: 12px 8px;">ACM-ICPC Dhaka Regional</td><td style="padding: 12px 8px;">22nd, Rajshahi Divisional Champion</td><td style="padding: 12px 8px;">RUET_OSIRIS</td></tr>
+                            <tr><td style="padding: 12px 8px;">2017</td><td style="padding: 12px 8px;">CUET NCPC</td><td style="padding: 12px 8px;">Honorable Mention</td><td style="padding: 12px 8px;">RUET_Breaking_Condition</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="entry-item">
-                <h3>Member</h3>
-                <p>Robotic Society of RUET.</p>
-            </div>
-        </section>
+        </div>
     </main>
 
     <div id="footerIncluder"></div>
