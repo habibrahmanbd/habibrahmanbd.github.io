@@ -88,13 +88,49 @@ a:focus {
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
   font-weight: 800;
   font-size: 16px;
   letter-spacing: -0.02em;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav-brand a {
-  color: var(--text-main);
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#themeSwitchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-main);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+#themeSwitchWrapper:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .nav-brand {
+    font-size: 14px;
+  }
 }
 
 .nav-links {
@@ -167,6 +203,7 @@ a:focus {
 
 /* Theme Toggle */
 .theme-switch-wrapper {
+  margin-left: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
